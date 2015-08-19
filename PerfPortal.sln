@@ -1,27 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PerfPortal", "http://localhost:56487", "{8997378A-367A-48CC-A8BC-7F9C3DA08A0B}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PerformancePortal", ".", "{8997378A-367A-48CC-A8BC-7F9C3DA08A0B}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56487"
-		Debug.AspNetCompiler.PhysicalPath = "..\PerfPortal\"
+		Debug.AspNetCompiler.PhysicalPath = "..\PerformancePortal\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56487\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_56487"
-		Release.AspNetCompiler.PhysicalPath = "..\PerfPortal\"
+		Release.AspNetCompiler.PhysicalPath = "..\PerformancePortal\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56487\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\PerfPortal\"
+		VWDPort = "49808"
+		SlnRelativePath = "..\PerformancePortal\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

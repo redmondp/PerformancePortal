@@ -15,8 +15,10 @@
         <a href="BCA_Report.aspx"><img src="Images/BCA_rpt.png" border="0" /></a><a href="PFI_Report.aspx"><img src="Images/PFI_rpt.png" border="0" /></a><a href="Comp_Report.aspx"><img src="Images/Complaints_rpt.png" border="0" /></a>
 
         <p>Other Reports</p>
+        
         <a href="FPOReinspections_Report.aspx"><img src="Images/FPOReinspections_rpt.png" border="0" /></a><a href="FPOAudits_Report.aspx"><img src="Images/FPOAudits_rpt.png" border="0" /></a><a href="Defic_Report.aspx"><img src="Images/Defic_rpt.png" border="0" /></a>
         <a href="FiresReg_Report.aspx"><img src="Images/FiresReg_rpt.png" border="0" /></a><a href="CasReg_Report.aspx"><img src="Images/CasReg_rpt.png" border="0" /></a><a href="http://hq-ict-08610v/corvucgi/cvhtmsrv.exe?file=/IRSReporting/Excel/Fires_In_Regulated_Properties_2014_15_FILTERED.xlsx&user=hypervu&password=hypervu"><img src="Images/FiresReg.png" border="0" /></a>
+        
         <a href="http://hq-ict-08610v/corvucgi/cvhtmsrv.exe?file=/IRSReporting/Excel/Fires_In_Regulated_Properties_2015_16_FILTERED.xlsx&user=hypervu&password=hypervu"><img src="Images/FiresReg1516.png" border="0" /></a>
 
     </div>
