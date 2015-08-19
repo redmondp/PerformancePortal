@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GMFRS Performance Portal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+   
+    <link href="Styles/main_style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css' />
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    
+    <script src="Scripts/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="Styles/jquery.bxslider.css" rel="stylesheet" />
+
+    <script type="text/javascript">$(document).ready(function () {
+    $('.bxslider').bxSlider();
+});</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="banner">
+                <img src="Images/banner.jpg" />
+            </div>
+            <div class="navigation">
+                <ul class="dropdown">
+                    <li><a href="Default.aspx">Home</a>
+                    </li>
+                    <li><a href="#">Performance Tools</a>
+                        <ul class="sub_menu">
+                            <li> <asp:LinkButton ID="IAT" runat="server" OnClick="IAT_OnClick">Incident Analysis Tool</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="IKPI" runat="server" OnClick="IKPI_OnClick">Incident KPI Tool</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="Framework" runat="server" OnClick="Framework_OnClick">Incident KPI Framework</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="Benchmarking" runat="server" OnClick="Benchmarking_OnClick">Internal Benchmarking Tool</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="QuarterlyTool" runat="server" OnClick="QuarterlyTool_OnClick">Quarterly Reporting Tool</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="QueryTool" runat="server" OnClick="QueryTool_OnClick">Incident Query Tool</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="KPIScore" runat="server" OnClick="KPIScore_OnClick">Corporate KPI Scorecards</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="StationScore" runat="server" OnClick="StationScore_OnClick">Station Scorecard</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="Mos" runat="server" OnClick="Mos_OnClick">MOS(Dev)</asp:LinkButton></li>
+                           </ul>
+
+                    </li>
+                                        <li><a href="#">Reports</a>
+                        <ul class="sub_menu">
+                            <li><a href="IncidentReports.aspx">Incident Related</a></li>
+                            <li><a href="PrevReports.aspx">Prevention</a></li>     
+                            <li><a href="ProtReports.aspx">Protection</a></li>      
+                            <li><a href="http://docmanpilot/PMReporting/Quarterly%20Performance%20Updates/Forms/AllItems.aspx">Quarterly Excel Reports</a></li>         
+                        </ul>
+                    </li>
+                    <li><a href="#">Directorates</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">Corporate Communications</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate Planning &amp; Intelligence</a>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="Emergency" runat="server" OnClick="Emergency_OnClick">Emergency Response</asp:LinkButton>
+                                
+                            </li>
+                            <li>
+                                <a href="#">Finance</a>
+                            </li>
+                            <li>
+                                <a href="#">ICT</a>
+                            </li>
+                            <li>
+                                <a href="#">P &amp; P</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Training.aspx">Training &amp; Guidance</a>
+                    </li>
+                    <li><a href="#">Workgroup Resources</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">Agendas &amp; Minutes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul class="sub_menu">
+                            <li><a href="Training.aspx">Request Support</a></li>
+                            <li><a href="Contact.aspx">Submit a Query</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </asp:ContentPlaceHolder>
+            <div class="footer"><p>Powered by Rocket CorVu NG</p></div>
+        </div>
+        
+    </form>
+  
+</body>
+
+</html>

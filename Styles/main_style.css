@@ -1,0 +1,396 @@
+﻿* 									{ margin: 0; padding: 0; }
+body {
+    background-image: url(shl.png);
+    background-repeat: repeat;
+    font: 14px Helvetica, Sans-Serif;
+}
+
+h1 {
+ font-family: Arial;
+ font-size: 18px;
+}
+
+.wrapper {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #ffffff;
+    padding-bottom: 331px;
+
+}
+
+.GenericContent{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #ffffff;
+
+}
+
+.ElearningContent{
+    position: relative;
+    width: 1400px;
+    height: 900px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+}
+
+.EmbeddedContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+}
+
+a:hover {color:black;}
+a:visited {color:black;}
+
+.banner {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right:auto;
+
+}
+
+    .modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+        z-index: 9998;
+        width: 100%;
+        height: 100%;
+    }
+    .modalPopup
+    {
+        position:absolute;
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding: 20px;
+        width: 500px;
+        height: auto;
+        z-index: 9999;
+    }
+
+    .modalPopup .Header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+
+    }
+
+        .modalPopup .Text {
+
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 5px;
+        display:block;
+
+    }
+
+      .modalPopup .Btn {
+
+
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    color: #333;
+    font-family: 'Calibri';
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+     border:none;
+    padding: 5px;
+    display:inline;
+    }
+
+
+
+.modalPopup .Btn:hover {
+    border: none;
+    background:#ad2323;
+    box-shadow: 0px 0px 1px #777;
+    color: #e1e1e1;
+    
+}
+
+.navigation {
+    position: relative;
+    width: 1200px;
+    height: 25px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: whitesmoke;
+    z-index: 9999;
+
+
+}
+
+.toolslider {
+
+    position: relative;
+    width: 850px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 9996;
+}
+
+.toolslider p {
+top: 0px;
+color: #ad2323;
+text-shadow: 2px 2px #e1e1e1;
+}
+
+.content-home {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 75px;
+    padding-top: 20px;
+
+}
+
+.content-home .createdate {
+
+    float: right;
+    font-family: Calibri; 
+    font-weight: bold; 
+    color:#333333;
+    font-size: 12px;
+}
+
+
+.footer {
+
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background-color: #ad2323;
+    zoom:1;
+    z-index: 10001;
+}
+
+.footer p {
+    height: 50px;
+    line-height: 50px;
+    font-family: Calibri; 
+    font-weight: bold; 
+    color:#cccccc;
+    font-size: 16px;
+    padding: 2px;
+    z-index: 9995;
+
+}
+
+
+
+
+a									{ text-decoration: none; }
+ul									{ list-style: none; }
+p                                   { margin: 15px 0; }
+
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: whitesmoke; }
+ul.dropdown a:hover		            { color: black; }
+ul.dropdown a:active                { color: black; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid #333;
+	 								  color: #333333; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #c72e2e; color: black; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: whitesmoke; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+.UC {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.UC p {
+color: #ad2323;
+text-shadow: 2px 2px #e1e1e1;
+font-size: 24px;
+text-align: center;
+}
+
+.UC img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ReportLinksArea {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.ReportLinksArea img {
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.ReportLinksArea p {
+top: 0px;
+color: #ad2323;
+text-shadow: 2px 2px #e1e1e1;
+}
+
+
+
+.RightSidebar {
+
+    position: relative;
+    float: right;
+    width: 410px;
+    height: 400px;
+    background-color: #cccccc;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.RightSidebar img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.RightSidebar li {
+    margin-left: 10px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.RightSidebar p {
+    font-family: Arial;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.LeftContent {
+
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 700px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.LeftContent img {
+    margin-top: 5px;
+}
+
+/*  COLM. SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF FOUR  */
+.span_1_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_3_of_3 {
+	width: 32.2%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}

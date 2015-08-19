@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GMFRS Performance Portal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="main_style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css' />
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+
+    <script type="text/javascript">$(document).ready(function () {
+    $('.bxslider').bxSlider();
+});</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="banner">
+                <img src="Images/banner.jpg" />
+            </div>
+            <div class="navigation">
+                <ul class="dropdown">
+                    <li><a href="Default.aspx">Home</a>
+                    </li>
+                    <li><a href="#">Performance Tools</a>
+                        <ul class="sub_menu">
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?IncidentAnalysisTool_Live" target="_self">Incident Analysis Tool</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?KPITool">Incident KPI Tool</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?KPIFramework">Incident KPI Framework</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?InternalBenchMarkingToolv7">Internal Benchmarking Tool (Dev)</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?qtr">Quarterly Reporting Tool (Dev)</a></li>
+                            <li><a href="http://hq-ict-12592v/misdv/">Incident Query Tool (Dev)</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?KPI_New_Dev">Corporate KPI Scorecards</a></li>
+                            <li><a href="http://hq-ict-09440v:8080/CorVu/g?Station_Scorecards_V5">Station Scorecard (Dev)</a></li>
+ 			    <li><a href="http://hq-ict-09440v:8080/CorVu3/g?MOStest">MOS Dashboard (Dev)</a></li>
+                            </ul></li>
+                                        <li><a href="#">Reports</a>
+                        <ul class="sub_menu">
+                            <li><a href="IncidentReports.aspx">Incident Related</a></li>
+                            <li><a href="PrevReports.aspx">Prevention</a></li>     
+                            <li><a href="ProtReports.aspx">Protection</a></li>      
+                            <li><a href="http://docmanpilot/PMReporting/Quarterly%20Performance%20Updates/Forms/AllItems.aspx">Quarterly Excel Reports</a></li>         
+                        </ul>
+                    </li>
+                    <li><a href="#">Directorates</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">Corporate Communications</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate Planning &amp; Intelligence</a>
+                            </li>
+                            <li>
+                                <a href="http://hq-ict-09440v:8080/CorVu/g?EmergencyResponse_dev">Emergency Response (Dev)</a>
+                            </li>
+                            <li>
+                                <a href="#">Finance</a>
+                            </li>
+                            <li>
+                                <a href="#">ICT</a>
+                            </li>
+                            <li>
+                                <a href="#">P &amp; P</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Training.aspx">Training &amp; Guidance</a>
+                    </li>
+                    <li><a href="#">Workgroup Resources</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">Agendas &amp; Minutes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul class="sub_menu">
+                            <li><a href="Training.aspx">Request Support</a></li>
+                            <li><a href="Contact.aspx">Submit a Query</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="footer"><p>Powered by Rocket CorVu NG</p></div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
